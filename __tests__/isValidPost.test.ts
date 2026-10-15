@@ -12,3 +12,11 @@ test("devuelve false cuando el título está vacío", () => {
 test("devuelve false cuando el contenido está vacío", () => {
   expect(isValidPost({ title: "Mi Nota", content: "" })).toBe(false);
 });
+
+test("devuelve false cuando el título contiene solo espacios", () => {
+  expect(isValidPost({ title: "   ", content: "Contenido de la nota" })).toBe(false);
+});
+
+test("devuelve false cuando el contenido contiene solo espacios", () => {
+  expect(isValidPost({ title: "Mi Nota", content: "   " })).toBe(false);
+});
