@@ -1,5 +1,3 @@
-// __tests__/truncate.test.ts
-
 import { truncate } from "../src/utils/truncate.js";
 import { test, expect } from "@jest/globals";
  
